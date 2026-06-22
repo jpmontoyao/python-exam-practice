@@ -1,0 +1,15 @@
+palabra,polaridad,intensidad
+excelente,positivo,3
+maravilloso,positivo,3
+increible,positivo,3
+bueno,positivo,2
+satisfecho,positivo,2
+agradable,positivo,1
+pesimo,negativo,-3
+terrible,negativo,-3
+horrible,negativo,-3
+malo,negativo,-2
+deficiente,negativo,-2
+decepcionante,negativo,-2
+lento,negativo,-1
+negativo,negativo,-1

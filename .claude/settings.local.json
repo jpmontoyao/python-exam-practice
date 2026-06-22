@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N \"\" -C \"jpmontoya-tarea3\")",
+      "Read(//Users/juanpablomontoya/.ssh/**)",
+      "Bash(python3 generate_sbatch.py)",
+      "Bash(rsync -av /Users/juanpablomontoya/Downloads/tarea03_compu/sbatch/ 'grupo8-iic3533@kraken.ing.puc.cl:~/nmf-tarea/sbatch/')",
+      "Bash(ssh *)",
+      "Bash(rsync -av 'grupo8-iic3533@kraken.ing.puc.cl:~/nmf-tarea/outputs/run_*.txt' /Users/juanpablomontoya/Downloads/tarea03_compu/outputs/)",
+      "Bash(rsync *)",
+      "Bash(python3 *)",
+      "Bash(pip install *)",
+      "Bash(pip3 install *)",
+      "Bash(/opt/homebrew/bin/python3.11 *)"
+    ]
+  }
+}
