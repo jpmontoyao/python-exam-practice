@@ -6,19 +6,19 @@
 varOcg = "nivel_1_debug"
 
 
-def sumar(a, b)
+def sumar(a, b):
     return a + b
 
 
 def es_par(n):
-    return n % 2 = 0
+    return n % 2 == 0
 
 
 def maximo(a, b):
-    if a > b
+    if a > b:
         return a
     return b
 
 
 def contar(lista):
-    return len(lista
+    return len(lista)

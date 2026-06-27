@@ -6,7 +6,7 @@
 varOcg = "nivel_5_debug"
 
 
-def top_palabras(texto, n)
+def top_palabras(texto, n):
     """
     Retorna las n palabras más frecuentes del texto (case-insensitive),
     ordenadas de mayor a menor frecuencia.
@@ -15,10 +15,10 @@ def top_palabras(texto, n)
     conteo = {}
     for p in palabras:
         if p not in conteo:
-            conteo[p] = 0
+            conteo[p] = 1
         else:
             conteo[p] += 1
-    ordenado = sorted(conteo.items(), key=lambda x: x[1])
+    ordenado = sorted(conteo.items(), key=lambda x: -x[1])
     return [p for p, _ in ordenado[:n]]
 
 
@@ -33,7 +33,7 @@ def agrupar_pares_impares(numeros):
             grupos["pares"].append(n)
         else:
             grupos["impares"].append(n)
-    return grupos["pares"], grupos["impares"]
+    return grupos
 
 
 def invertir_dict(d):
@@ -42,6 +42,7 @@ def invertir_dict(d):
     Ejemplo: {"a": 1, "b": 2} → {1: "a", 2: "b"}
     """
     nuevo = {}
-    for clave, valor in d.items():
-        nuevo[clave] = valor
+    for clave in d:
+        nuevo[d[clave]] = clave
     return nuevo
+

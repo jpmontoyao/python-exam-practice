@@ -12,7 +12,7 @@ def max_lista(numeros):
     for n in numeros:
         if n > maximo:
             maximo = n
-    return n
+    return maximo
 
 
 def frecuencias(palabras):
@@ -20,7 +20,7 @@ def frecuencias(palabras):
     conteo = {}
     for p in palabras:
         if p not in conteo:
-            conteo[p] = 0
+            conteo[p] = 1
         else:
             conteo[p] += 1
     return conteo
@@ -31,5 +31,5 @@ def aplanar(listas):
     resultado = []
     for sublista in listas:
         for elemento in sublista:
-            resultado.append(sublista)
+            resultado.append(elemento)
     return resultado
