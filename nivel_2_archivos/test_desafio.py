@@ -82,7 +82,7 @@ test("leer_sentimientos 'lento' correcto",
 # --- palabras_positivas ---
 print("\n-- palabras_positivas('sentimientos.csv') --")
 positivas = palabras_positivas("sentimientos.csv")
-expected_positivas = ["excelente", "maravilloso", "increible", "bueno", "satisfecho", "agradable"]
+expected_positivas = ["excelente", "increible", "maravilloso", "bueno", "satisfecho", "agradable"]
 test("palabras_positivas resultado completo", positivas, expected_positivas)
 test("palabras_positivas cantidad", len(positivas) if positivas else None, 6)
 test_partial("palabras_positivas primer elemento es 'excelente'",

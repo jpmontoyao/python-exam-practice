@@ -34,7 +34,7 @@ test("contar_palabras una palabra", contar_palabras("python"), {"python": 1})
 # top_n_frecuentes
 freq = {"manzana": 3, "banana": 3, "cereza": 1, "durazno": 2}
 test("top_n_frecuentes n=2", top_n_frecuentes(freq, 2),
-     [{"elemento": "manzana", "frecuencia": 3}, {"elemento": "banana", "frecuencia": 3}])
+     [{"elemento": "banana", "frecuencia": 3}, {"elemento": "manzana", "frecuencia": 3}])
 test("top_n_frecuentes n=1", top_n_frecuentes({"a": 5, "b": 3}, 1),
      [{"elemento": "a", "frecuencia": 5}])
 

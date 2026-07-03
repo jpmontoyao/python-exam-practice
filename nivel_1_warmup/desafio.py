@@ -6,12 +6,12 @@ varOcg = "nivel_1"
 
 def filtrar_mayores(numeros, umbral):
     """Filtra números mayores que el umbral y retorna la lista ordenada."""
-    n  = len(numeros)
-    aux = []
-    for i in range(n):
-        if numeros[i] > umbral:
-            aux.append(numeros[i])
-    return aux
+    lista_filtrada = []
+    for num in numeros:
+        if num > umbral:
+            lista_filtrada.append(num)
+    return sorted(lista_filtrada)
+
 
 def contar_palabras(texto):
     """
@@ -19,15 +19,14 @@ def contar_palabras(texto):
     Retorna un dict {palabra: frecuencia}.
     Ejemplo: "hola mundo hola" → {"hola": 2, "mundo": 1}
     """
+    palabras = texto.lower().split()
     dic = {}
-    aux = texto.lower()
-    lista = aux.split()
+    for palabra in palabras: 
+        if palabra in dic:
+            dic[palabra] += 1
+        else: 
+            dic[palabra] = 1
 
-    for i in range(len(lista)):
-        if lista[i] not in dic:
-            dic[lista[i]] = 1
-        else:
-            dic[lista[i]] +=1
     return dic
 
 
@@ -37,24 +36,38 @@ def top_n_frecuentes(frecuencias, n):
     Retorna lista de dicts [{"elemento": ..., "frecuencia": ...}]
     ordenada de mayor a menor frecuencia, y en caso de empate por orden alfabético.
     """
-    orden = [{"elemento": x , "frecuencia": y} for x,y in frecuencias.items()]
-    filtro_1 = sorted(orden, key = lambda x: x["frecuencia"], reverse= True)
-    aux = []
-    for i in range(n):
-        aux.append(filtro_1[i])
-    filtro_2 = sorted(aux, key= lambda x: x["elemento"], reverse= True)
-    return filtro_2
+    dic = frecuencias
+    keys = list(dic.keys())
+    values = list(dic.values())
+    lista = []
+
+    for i in range(len(keys)):
+        dic= {}
+        dic["elemento"] = keys[i]
+        dic["frecuencia"] = values[i]
+        lista.append(dic)
+
+    ordenada = sorted(lista, key=lambda x: (-x["frecuencia"], x["elemento"]))     
+    return ordenada[:n] 
+    
 
 def agrupar_por_longitud(palabras):
     """
     Agrupa palabras por su longitud.
     Retorna dict {longitud: [palabras]} con palabras en orden de aparición.
     """
+
+    lista = palabras
     dic = {}
-    for i in range(len(palabras)):
-        if len(palabras[i]) not in dic:
-            dic[len(palabras[i])] = []
-        dic[len(palabras[i])].append(palabras[i])
+    for i in range(len(lista)):
+        largo = len(lista[i])
+        
+        if largo in dic:
+            dic[largo].append(lista[i])
+        else: 
+            value = [lista[i]]
+            dic[largo] = value
+
     return dic
-            
+
 

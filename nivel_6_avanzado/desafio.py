@@ -15,22 +15,7 @@ def top_engagement(file_name, n):
     Retorna: lista de dicts [{"id": ..., "author": ..., "engagement_rate": ...}]
     ordenada de mayor a menor engagement_rate.
     """
-    base = os.path.dirname(os.path.abspath(__file__))
-    path = os.path.join(base, file_name)
-    with open(path,"r", encoding="utf-8") as f:
-        data = json.load(f)
-    datos = data["posts"]
-    lista = []
-    for post in datos:
-        aux = (float(len(post["retweets"])) + float(len(post["likes"])) + float(len(post["replies"])))/ float(post["author_followers"])
-        dic = {"id":post["id"], "author":post["author"],"engagement_rate": aux*100 }
-        lista.append(dic)
-    
-    final = sorted(lista, key= lambda x: (-x["engagement_rate"],x["id"]))
-    out = []
-    for i in range(n):
-        out.append(final[i])
-    return out
+    pass
 
 
 def buscar_en_textos(file_name, keywords):
@@ -44,29 +29,7 @@ def buscar_en_textos(file_name, keywords):
     - Solo incluir posts donde se encontró al menos una keyword
     - Mantener orden original del JSON
     """
-    base = os.path.dirname(os.path.abspath(__file__))
-    path = os.path.join(base, file_name)
-    with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    datos = data["posts"]
-    final = []
-    for post in datos:
-        f1 = post["text"].lower()
-        string = ""
-        for letra in f1:
-            if letra not in ".,!?¡¿:;()":
-                string += str(letra)
-
-        x = string.split()
-        palabras_encontradas = []
-        for palabra in x:
-            if palabra in keywords and palabra not in palabras_encontradas:
-                palabras_encontradas.append(palabra)
-        
-        if len(palabras_encontradas) > 0:
-            dic = {"id":post["id"], "author":post["author"],"text":post["text"], "palabras_encontradas":palabras_encontradas}
-            final.append(dic)
-    return final
+    pass
 
 
 def resumen_diario(file_name):
@@ -78,21 +41,4 @@ def resumen_diario(file_name):
 
     Retorna: {"dias": {"2024-11-15": {"total_posts": ..., "total_interacciones": ..., "autor_mas_activo": ...}, ...}}
     """
-    base = os.path.dirname(os.path.abspath(__file__))
-    path = os.path.join(base, file_name)
-    with open(path,"r", encoding="utf-8") as f:
-        data = json.load(f)
-    datos = data["posts"]
-    fechas = {}
-    for post in datos:
-        if post["created_at"][:10] not in fechas:
-            fechas[post["created_at"][:10]] = 1
-        else: 
-            fechas[post["created_at"][:10]] +=1
-
-    print(fechas)
-
-
-
-
-    
+    pass
