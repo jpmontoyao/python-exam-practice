@@ -1,0 +1,21 @@
+Fecha,Mes,Hora,COD_REGION,COMUNA,TIPO_USUARIO,Libros_Prestados,Renovaciones,Multas,Dias_Atraso
+2024/03/04,3,9,13,Santiago,Estudiante,3,0,0,0
+2024/03/06,3,14,13,Santiago,Adulto,2,1,500,5
+2024/03/09,3,11,13,Maipú,Estudiante,1,0,-200,0
+2024/03/11,3,16,5,Viña del Mar,Adulto,4,0,1000,3
+2024/03/16,3,10,13,Maipú,Estudiante,2,0,0,-1
+2024/04/01,4,9,13,Santiago,Estudiante,3,2,0,0
+2024/04/05,4,15,5,Viña del Mar,Estudiante,1,0,500,2
+2024/04/07,4,13,13,Maipú,Adulto,2,0,0,0
+2024/04/13,4,10,13,Santiago,Adulto,1,1,0,0
+2024/04/20,4,16,5,Viña del Mar,Adulto,3,0,0,0
+2024/05/03,5,9,13,Santiago,Estudiante,2,0,0,0
+2024/05/10,5,14,13,Maipú,Estudiante,4,1,500,-4
+2024/05/15,5,11,5,Viña del Mar,Adulto,1,0,0,0
+2024/05/18,5,16,13,Santiago,Adulto,3,0,1000,7
+2024/05/25,5,10,13,Maipú,Estudiante,2,0,0,0
+2024/06/01,6,9,5,Viña del Mar,Estudiante,1,0,-300,0
+2024/06/07,6,14,13,Santiago,Adulto,2,1,0,0
+2024/06/15,6,11,13,Maipú,Estudiante,3,0,0,0
+2024/06/21,6,16,5,Viña del Mar,Adulto,2,0,500,3
+2024/06/28,6,10,13,Santiago,Estudiante,1,0,0,0

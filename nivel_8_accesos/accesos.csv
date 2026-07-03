@@ -1,0 +1,11 @@
+usuario,fecha,hora,accion,duracion_minutos
+ana,2024-03-01,09:15,login,2
+ana,2024-03-01,10:30,descarga,15
+bob,2024-03-01,08:45,login,1
+bob,2024-03-01,09:00,consulta,8
+carlos,2024-03-01,14:00,login,3
+carlos,2024-03-01,14:30,descarga,22
+ana,2024-03-02,08:00,login,1
+bob,2024-03-02,11:00,consulta,12
+carlos,2024-03-02,09:30,descarga,18
+ana,2024-03-02,13:45,consulta,6

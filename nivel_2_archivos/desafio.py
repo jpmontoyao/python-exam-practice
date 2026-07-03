@@ -1,11 +1,8 @@
 # Nivel 2: Lectura de Archivos JSON y CSV
-# __define-ocg__
-import os # es un mósulo de Pyhton para interactuar con el sistema operativo, principalmente para rutas y archivos.
+import os
 import json
 import csv
 
-
-varOcg = "nivel_2"
 
 
 def leer_posts(file_name):

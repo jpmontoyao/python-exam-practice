@@ -1,12 +1,10 @@
 # Nivel 5: Analisis de Sentimientos
 # Equivalente al Desafio 3 del examen real
-# __define-ocg__
 import os
 import json
 from cargar_csv import cargar_sentimientos
 import csv
 
-varOcg = "nivel_5"
 
 def clasificacion(json_name, csv_name):
     """

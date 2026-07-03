@@ -1,9 +1,7 @@
 # Nivel 6: Avanzado - Engagement, Búsqueda y Agrupación
-# __define-ocg__
 import os
 import json
 
-varOcg = "nivel_6"
 
 def top_engagement(file_name, n):
     """

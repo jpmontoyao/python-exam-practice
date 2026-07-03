@@ -1,0 +1,11 @@
+id,producto,categoria,precio,cantidad,fecha,vendedor
+1,Laptop,Tecnologia,850000,2,2024-01-15,Maria
+2,Mouse,Tecnologia,15000,5,2024-01-15,Carlos
+3,Camisa,Ropa,25000,3,2024-01-16,Maria
+4,Pantalon,Ropa,45000,1,2024-01-16,Pedro
+5,Teclado,Tecnologia,35000,2,2024-01-17,Carlos
+6,Zapatos,Ropa,60000,2,2024-01-17,Pedro
+7,Monitor,Tecnologia,320000,1,2024-01-18,Maria
+8,Chaqueta,Ropa,80000,1,2024-01-18,Carlos
+9,Auriculares,Tecnologia,45000,3,2024-01-19,Pedro
+10,Camiseta,Ropa,18000,4,2024-01-19,Maria

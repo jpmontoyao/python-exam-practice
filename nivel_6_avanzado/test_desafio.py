@@ -1,8 +1,6 @@
-# __define-ocg__
 import sys
 import os
 
-varOcg = "nivel_6"
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from desafio import top_engagement, buscar_en_textos, resumen_diario

@@ -1,10 +1,8 @@
 # Nivel 3: Filtros y Extraccion de Datos
 # Equivalente al Desafio 1 del examen real
-# __define-ocg__
 import os
 import json
 
-varOcg = "nivel_3"
 
 def mas_de_1000_seguidores(file_name):
     """

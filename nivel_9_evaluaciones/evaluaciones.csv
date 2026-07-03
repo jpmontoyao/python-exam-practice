@@ -1,0 +1,13 @@
+id,curso,estudiante,nota,comentario,fecha
+1,MAT101,juan,85,excelente,2024-06-01
+2,MAT101,maria,92,muy bueno,2024-06-01
+3,FIS101,juan,67,regular,2024-06-02
+4,FIS101,pedro,78,bueno,2024-06-02
+5,INF101,maria,95,excelente,2024-06-03
+6,INF101,pedro,88,muy bueno,2024-06-03
+7,MAT101,pedro,71,bueno,2024-06-04
+8,FIS101,maria,82,bueno,2024-06-04
+9,INF101,juan,90,excelente,2024-06-05
+10,HUM101,juan,76,bueno,2024-06-05
+11,HUM101,maria,88,muy bueno,2024-06-06
+12,HUM101,pedro,65,regular,2024-06-06
