@@ -11,8 +11,6 @@
 #
 # True = celda viva, False = celda muerta
 #
-# __define-ocg__
-varOcg = "nivel_5c_debug"
 
 DIRECCIONES = [(-1, -1), (-1, 0), (-1, 1),
                ( 0, -1),          ( 0, 1),

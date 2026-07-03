@@ -1,10 +1,8 @@
 # Nivel 2: Lectura de Archivos JSON y CSV
-# __define-ocg__
 import os
 import json
 import csv
 
-varOcg = "nivel_2"
 
 def leer_posts(file_name):
     """

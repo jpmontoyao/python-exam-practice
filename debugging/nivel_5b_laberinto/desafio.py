@@ -9,8 +9,6 @@
 #   'S' = inicio      '#' = pared (no se puede pasar)
 #   'E' = salida      '.' = camino libre
 #
-# __define-ocg__
-varOcg = "nivel_5b_debug"
 
 DIRECCIONES = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 

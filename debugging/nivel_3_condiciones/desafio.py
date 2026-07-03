@@ -2,8 +2,6 @@
 # El código corre, pero las condiciones están mal escritas.
 # Pista: revisa los operadores de comparación (>, <, ==, !=)
 # y el uso de "not". Hay 3 bugs, uno por función.
-# __define-ocg__
-varOcg = "nivel_3_debug"
 
 
 def filtrar_positivos(numeros):

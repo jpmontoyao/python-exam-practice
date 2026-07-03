@@ -7,8 +7,6 @@
 #
 # Dos funciones que se llaman entre sí — igual que en el buscaminas.
 #
-# __define-ocg__
-varOcg = "nivel_5g_debug"
 
 
 def merge(izq, der):
@@ -21,18 +19,20 @@ def merge(izq, der):
     resultado = []
     i = j = 0
 
+
     while i < len(izq) and j < len(der):
-        if izq[i] > der[j]:
+        if izq[i] < der[j]:
             resultado.append(izq[i])
             i += 1
         else:
             resultado.append(der[j])
             j += 1
+   
 
-    return resultado + izq[i:] + der[j:]
+    return resultado + izq[i:] + der[j:]  
 
 
-def merge_sort(arr)
+def merge_sort(arr):
     """
     Ordena una lista de menor a mayor usando merge sort.
 
@@ -40,10 +40,12 @@ def merge_sort(arr)
         merge_sort([5, 2, 8, 1, 9]) → [1, 2, 5, 8, 9]
     """
     if len(arr) <= 1:
+       
         return arr
 
     mid = len(arr) // 2
     izq = merge_sort(arr[:mid])
-    der = merge_sort(arr[mid + 1:])
+    der = merge_sort(arr[mid:])
 
     return merge(izq, der)
+

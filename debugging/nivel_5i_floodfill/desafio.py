@@ -10,17 +10,15 @@
 #   - es_valida() ↔ contar_minas_vecinas()
 #   - flood_fill() ↔ solution() con BFS
 #
-# __define-ocg__
-varOcg = "nivel_5i_debug"
 
-DIRECCIONES = [(1, 1), (1, -1), (-1, 1), (-1, -1)]
+DIRECCIONES = [(1, 0), (0, 1), (-1, 0), (0, -1)]
 
 
 def es_valida(imagen, f, c, color_original):
     """Retorna True si la celda (f,c) existe y tiene el color original."""
     filas = len(imagen)
-    columnas = len(imagen)
-    return 0 <= f < filas and 0 <= c < columnas and imagen[f][c] != color_original
+    columnas = len(imagen[0])
+    return 0 <= f < filas and 0 <= c < columnas and imagen[f][c] == color_original
 
 
 def flood_fill(imagen, fila, columna, color_nuevo):
@@ -38,7 +36,7 @@ def flood_fill(imagen, fila, columna, color_nuevo):
                    [3, 2, 2]]
     """
     color_original = imagen[fila][columna]
-    if color_original != color_nuevo:
+    if color_original == color_nuevo:
         return imagen
 
     cola = [(fila, columna)]
@@ -53,3 +51,9 @@ def flood_fill(imagen, fila, columna, color_nuevo):
                 cola.append((nf, nc))
 
     return imagen
+
+imagen = [[1, 1, 1],
+          [1, 2, 2],
+          [1, 2, 2]]
+print(flood_fill(imagen,0,0,3))
+

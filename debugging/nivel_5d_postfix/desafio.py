@@ -14,8 +14,6 @@
 #   - Si el token es operador → sacar dos números de la pila,
 #     operar, y apilar el resultado
 #
-# __define-ocg__
-varOcg = "nivel_5d_debug"
 
 OPERADORES = {'+', '-', '*', '/'}
 

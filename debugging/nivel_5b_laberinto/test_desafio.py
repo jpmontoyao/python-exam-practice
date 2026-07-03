@@ -1,19 +1,17 @@
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from desafio import resolver_laberinto
-# __define-ocg__
 
-varOcg = 0
 failed = 0
 
 def test(nombre, resultado, esperado):
-    global varOcg, failed
-    varOcg += 1
+    global test_count, failed
+    test_count += 1
     if resultado == esperado:
-        print(f"✓ PASS [{varOcg}]: {nombre}")
+        print(f"✓ PASS [{test_count}]: {nombre}")
     else:
         failed += 1
-        print(f"✗ FAIL [{varOcg}]: {nombre}")
+        print(f"✗ FAIL [{test_count}]: {nombre}")
         print(f"   Esperado: {esperado}")
         print(f"   Obtenido: {resultado}")
 

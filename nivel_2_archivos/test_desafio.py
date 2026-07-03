@@ -1,30 +1,29 @@
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from desafio import leer_posts, contar_posts_por_autor, leer_sentimientos, palabras_positivas
-# __define-ocg__
 
-varOcg = 0
+test_count = 0
 failed_tests = 0
 
 def test(name, result, expected):
-    global varOcg, failed_tests
-    varOcg += 1
+    global test_count, failed_tests
+    test_count += 1
     if result == expected:
-        print(f"✓ PASS [{varOcg}]: {name}")
+        print(f"✓ PASS [{test_count}]: {name}")
     else:
         failed_tests += 1
-        print(f"✗ FAIL [{varOcg}]: {name}")
+        print(f"✗ FAIL [{test_count}]: {name}")
         print(f"   Esperado: {expected}")
         print(f"   Obtenido: {result}")
 
 def test_partial(name, condition, detail=""):
-    global varOcg, failed_tests
-    varOcg += 1
+    global test_count, failed_tests
+    test_count += 1
     if condition:
-        print(f"✓ PASS [{varOcg}]: {name}")
+        print(f"✓ PASS [{test_count}]: {name}")
     else:
         failed_tests += 1
-        print(f"✗ FAIL [{varOcg}]: {name}")
+        print(f"✗ FAIL [{test_count}]: {name}")
         if detail:
             print(f"   Detalle: {detail}")
 
@@ -90,7 +89,7 @@ test_partial("palabras_positivas primer elemento es 'excelente'",
 test_partial("palabras_positivas último elemento es 'agradable'",
              positivas[-1] == "agradable" if positivas else False)
 
-total = varOcg
+total = test_count
 print(f"\n{'='*45}")
 print(f"Resultado: {total - failed_tests}/{total} pasados")
 if failed_tests == 0:

@@ -2,8 +2,6 @@
 # El código corre, pero se usa la variable equivocada en algún punto.
 # Pista: fíjate bien en qué se *retorna* y qué se *agrega* a las listas.
 # Hay 3 bugs, uno por función.
-# __define-ocg__
-varOcg = "nivel_4_debug"
 
 
 def max_lista(numeros):

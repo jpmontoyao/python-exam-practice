@@ -14,8 +14,6 @@
 #   2. Recorrer: si el siguiente empieza antes o donde termina el actual → fusionar
 #                si no → agregar como nuevo intervalo separado
 #
-# __define-ocg__
-varOcg = "nivel_5f_debug"
 
 
 def fusionar_intervalos(intervalos):

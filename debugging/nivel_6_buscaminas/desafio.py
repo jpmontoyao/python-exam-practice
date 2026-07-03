@@ -3,8 +3,6 @@
 # No hay pistas de cuántos bugs hay ni dónde están.
 # Lee el código, entiéndelo, y arréglalo hasta pasar todos los tests.
 # IMPORTANTE: no cambies la firma de solution(field, x, y)
-# __define-ocg__
-varOcg = "nivel_6_debug"
 
 DIRECCIONES = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
 

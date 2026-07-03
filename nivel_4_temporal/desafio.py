@@ -1,10 +1,8 @@
 # Nivel 4: Analisis Temporal
 # Equivalente al Desafio 2 del examen real
-# __define-ocg__
 import os
 import json
 
-varOcg = "nivel_4"
 
 def distribucion_publicaciones(file_name):
     """

@@ -2,8 +2,6 @@
 # Cada función tiene 2 bugs de tipos distintos.
 # Ya no hay pistas de qué tipo es cada bug — igual que en el examen real.
 # Hay 6 bugs en total, 2 por función.
-# __define-ocg__
-varOcg = "nivel_5_debug"
 
 
 def top_palabras(texto, n):

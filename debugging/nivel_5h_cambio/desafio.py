@@ -7,8 +7,6 @@
 # Las dos funciones tienen bugs — si dar_cambio falla, la segunda
 # también falla aunque su lógica esté bien. Igual que en el buscaminas.
 #
-# __define-ocg__
-varOcg = "nivel_5h_debug"
 
 
 def dar_cambio(monto, monedas):
@@ -21,11 +19,11 @@ def dar_cambio(monto, monedas):
         dar_cambio(160, [100, 50, 10, 5, 1]) → [100, 50, 10]
         dar_cambio(30, [25, 10])             → []  (no se puede dar exacto)
     """
-    monedas_ordenadas = sorted(monedas)
+    monedas_ordenadas = sorted(monedas, reverse= True)
     resultado = []
 
     for moneda in monedas_ordenadas:
-        while monto > moneda:
+        while monto >= moneda:
             resultado.append(moneda)
             monto -= moneda
 
@@ -45,7 +43,8 @@ def cantidad_por_denominacion(cambio):
     conteo = {}
     for moneda in cambio:
         if moneda not in conteo:
-            conteo[moneda] = 0
+            conteo[moneda] = 1
         else:
             conteo[moneda] += 1
     return conteo
+

@@ -1,19 +1,18 @@
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from desafio import filtrar_mayores, contar_palabras, top_n_frecuentes, agrupar_por_longitud
-# __define-ocg__
 
-varOcg = 0
+test_count = 0
 failed_tests = 0
 
 def test(name, result, expected):
-    global varOcg, failed_tests
-    varOcg += 1
+    global test_count, failed_tests
+    test_count += 1
     if result == expected:
-        print(f"✓ PASS [{varOcg}]: {name}")
+        print(f"✓ PASS [{test_count}]: {name}")
     else:
         failed_tests += 1
-        print(f"✗ FAIL [{varOcg}]: {name}")
+        print(f"✗ FAIL [{test_count}]: {name}")
         print(f"   Esperado: {expected}")
         print(f"   Obtenido: {result}")
 
@@ -44,7 +43,7 @@ test("agrupar_por_longitud básico",
      {4: ["hola"], 2: ["hi", "yo"], 5: ["mundo"], 6: ["python"]})
 test("agrupar_por_longitud vacío", agrupar_por_longitud([]), {})
 
-total = varOcg
+total = test_count
 print(f"\n{'='*45}")
 print(f"Resultado: {total - failed_tests}/{total} pasados")
 if failed_tests == 0:

@@ -12,8 +12,6 @@
 #
 # Suposición: los conteos son siempre de un solo dígito (1-9).
 #
-# __define-ocg__
-varOcg = "nivel_5e_debug"
 
 
 def comprimir(texto):

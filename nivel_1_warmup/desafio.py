@@ -1,8 +1,6 @@
 # Nivel 1: Warmup - Estructuras de Datos Básicas
 # No se requiere leer archivos en este nivel
-# __define-ocg__
 
-varOcg = "nivel_1"
 
 def filtrar_mayores(numeros, umbral):
     """Filtra números mayores que el umbral y retorna la lista ordenada."""

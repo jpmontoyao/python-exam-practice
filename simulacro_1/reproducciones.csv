@@ -1,0 +1,16 @@
+id,cancion,artista,genero,duracion_seg,fecha,hora,usuario,pais
+1,Blinding Lights,The Weeknd,Pop,200,2024-05-01,08:15,user_a,CL
+2,Gasolina,Daddy Yankee,Reggaeton,201,2024-05-01,09:00,user_b,MX
+3,Bohemian Rhapsody,Queen,Rock,354,2024-05-01,10:00,user_a,CL
+4,Con Calma,Daddy Yankee,Reggaeton,187,2024-05-01,10:45,user_c,AR
+5,Smells Like Teen Spirit,Nirvana,Rock,301,2024-05-01,14:20,user_d,CL
+6,Dance Monkey,Tones and I,Pop,210,2024-05-02,08:00,user_b,MX
+7,Stairway to Heaven,Led Zeppelin,Rock,482,2024-05-02,09:15,user_a,CL
+8,Despacito,Luis Fonsi,Reggaeton,229,2024-05-02,11:30,user_c,AR
+9,Stairway to Heaven,Led Zeppelin,Rock,482,2024-05-02,14:00,user_d,CL
+10,Con Calma,Daddy Yankee,Reggaeton,187,2024-05-02,15:30,user_b,MX
+11,Hotel California,Eagles,Rock,391,2024-05-03,09:00,user_a,CL
+12,Bad Guy,Billie Eilish,Pop,194,2024-05-03,10:30,user_c,AR
+13,Con Calma,Daddy Yankee,Reggaeton,187,2024-05-03,11:00,user_d,CL
+14,Gasolina,Daddy Yankee,Reggaeton,201,2024-05-03,16:00,user_b,MX
+15,Back In Black,AC/DC,Rock,255,2024-05-03,17:30,user_a,CL

@@ -2,8 +2,6 @@
 # El código corre sin errores pero los resultados son incorrectos.
 # Pista: revisa los operadores aritméticos y de asignación.
 # Hay 3 bugs, uno por función.
-# __define-ocg__
-varOcg = "nivel_2_debug"
 
 
 def acumular(numeros):
